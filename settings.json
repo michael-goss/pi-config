@@ -13,5 +13,24 @@
     "outputDir": ".pi/scout-runs",
     "outputFilePrefix": "scout",
     "maxToolCalls": 35
+  },
+  "piSubagent": {
+    "defaultModel": "default",
+    "models": {
+      "fast": "openai-codex/gpt-5.4-mini",
+      "default": "openai-codex/gpt-5.5",
+      "deep": "openai-codex/gpt-5.5"
+    },
+    "defaultThinking": "low",
+    "thinking": {
+      "fast": "low",
+      "default": "low",
+      "deep": "high"
+    },
+    "includeContextFiles": false,
+    "maxToolCalls": 100,
+    "saveArtifacts": false,
+    "outputDir": ".pi/subagent-runs",
+    "outputFilePrefix": "subagent"
   }
 }

@@ -27,7 +27,7 @@ type GuardrailsConfig = {
 
 const EXTENSION_DIR = __dirname;
 const MODES: Mode[] = ["PLAN", "HITL", "AFK"];
-const READ_ONLY_TOOLS = new Set(["read", "grep", "find", "ls", "pi_scout"]);
+const READ_ONLY_TOOLS = new Set(["read", "grep", "find", "ls", "pi_scout", "subagent"]);
 const PROCESS_STATE_KEY = "__piGuardrailsModeState";
 
 type ProcessState = { mode?: Mode };
